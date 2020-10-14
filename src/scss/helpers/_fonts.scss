@@ -1,3 +1,35 @@
 @font-face {
-  @include includeFont(200, $first-font, "Montserrat-Thin");
+  @include includeFont(200, $first-font, "Muller-UltraLight");
+}
+
+// @font-face {
+//   @include includeFont(300, $first-font, "Muller-LightItalic", "italic");
+// }
+
+@font-face {
+  @include includeFont(300, $first-font, "Muller-Light");
+}
+
+@font-face {
+  @include includeFont(400, $first-font, "Muller-Regular");
+}
+
+@font-face {
+  @include includeFont(500, $first-font, "Muller-Medium");
+}
+
+@font-face {
+  @include includeFont(700, $first-font, "Muller-Bold");
+}
+
+@font-face {
+  @include includeFont(800, $first-font, "Muller-ExtraBold");
+}
+
+@font-face {
+  @include includeFont(900, $first-font, "Muller-Black");
+}
+
+@font-face {
+  @include includeFont(800, $second-font, "Montserrat-ExtraBold");
 }
