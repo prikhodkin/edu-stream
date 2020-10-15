@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Языковая школа</title>
+  @@include('../blocks/favicon/favicon.html')
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+@@include('../blocks/header/header.html')
+<main>
+  <section class="breadcrumbs">
+    <h2 class="visually-hidden">Хлебные крошки</h2>
+    <ul class="breadcrumbs__list"></ul>
+  </section>
+  <section class="promo">
+    <div class="promo__top">
+      <div class="promo__content">
+        <h1 class="promo__title"><b>Курсы иностранных языков для взрослых и детей</b> в Алматы и Нур-Султане</h1>
+        <p class="promo__text">Начните говорить на иностранном языке уже через 30 дней</p>
+      </div>
+      <picture class="promo__img">
+        <source type="image/webp" srcset="">
+        <img src="" alt="">
+      </picture>
+    </div>
+    <div class="promo__bottom">
+      <ul class="promo__list">
+        <li class="promo__item">
+          <div class="promo__icon">
+            <img src="" alt="">
+          </div>
+          Каждое 4-е занятие в подарок
+        </li>
+        <li class="promo__item">
+          <div class="promo__icon">
+            <img src="" alt="">
+          </div>
+          Группы из 4-10 человек с одинаковым уровнем знаний
+        </li>
+        <li class="promo__item">
+          <div class="promo__icon">
+            <img src="" alt="">
+          </div>
+          Проводим занятия с носителями языка
+        </li>
+      </ul>
+      <div class="promo__place place">
+        <div class="place__content">
+          <p class="place__title">Первый урок бесплатно!</p>
+          <p class="place__text">Запишитесь на пробное занятие и познакомьтесь с нашей школой поближе</p>
+        </div>
+        <a href="#" class="place__button button button--accent">
+          <span class="button__inner">Записаться</span>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section class="methods">
+    <h2 class="methods__title title">Прогрессивные методы вместо зубрежки</h2>
+    <ul class="methods__list">
+      <li class="methods__item">
+        <picture class="methods__img">
+          <source type="image/webp" srcset="">
+          <img src="" alt="">
+        </picture>
+        <p class="methods__name">Современные технологии и сбалансированный подход</p>
+        <p class="methods__text">Учим по уникальным методикам и развиваем языковые компетенции 21 века: коммуникации, коллаборации, креативность, критическое мышление.</p>
+      </li>
+      <li class="methods__item">
+        <picture class="methods__img">
+          <source type="image/webp" srcset="">
+          <img src="" alt="">
+        </picture>
+        <p class="methods__name">Геймификация и вовлечение</p>
+        <p class="methods__text">Внедряем в процесс обучения элементы соперничества. Ученики соревнуются, видят свой прогресс в обучении и получают мощную мотивацию к дальнейшему изучению языка.</p>
+      </li>
+      <li class="methods__item">
+        <picture class="methods__img">
+          <source type="image/webp" srcset="">
+          <img src="" alt="">
+        </picture>
+        <p class="methods__name">Разные каналы передачи информации </p>
+        <p class="methods__text">В учебных пособиях гармонично сочетаются слова и зрительные образы, активно используются графические и аудио материалы.</p>
+      </li>
+    </ul>
+  </section>
+  <section class="courses">
+    <h2 class="courses__title title">Наши языковые курсы</h2>
+    <ul class="courses__list">
+      <li class="courses__item">
+        <a href="#" class="courses__inner">
+          <picture class="courses__img">
+            <source type="image/webp" srcset="">
+            <img src="" alt="">
+          </picture>
+          <p class="courses__name">Английский для детей</p>
+        </a>
+      </li>
+      <li class="courses__item">
+        <a href="#" class="courses__inner">
+          <picture class="courses__img">
+            <source type="image/webp" srcset="">
+            <img src="" alt="">
+          </picture>
+          <p class="courses__name">Английский для взрослых</p>
+        </a>
+      </li>
+      <li class="courses__item">
+        <a href="#" class="courses__inner">
+          <picture class="courses__img">
+            <source type="image/webp" srcset="">
+            <img src="" alt="">
+          </picture>
+          <p class="courses__name">Подготовка к IELTS</p>
+        </a>
+      </li>
+      <li class="courses__item">
+        <a href="#" class="courses__inner">
+          <picture class="courses__img">
+            <source type="image/webp" srcset="">
+            <img src="" alt="">
+          </picture>
+          <p class="courses__name">Немецкий язык</p>
+        </a>
+      </li>
+      <li class="courses__item">
+        <a href="#" class="courses__inner">
+          <picture class="courses__img">
+            <source type="image/webp" srcset="">
+            <img src="" alt="">
+          </picture>
+          <p class="courses__name">Испанский язык</p>
+        </a>
+      </li>
+    </ul>
+    <div class="courses__controls controls">
+      <button class="controls__button controls__button--prev">назад</button>
+      <p class="controls__counter"><span class="controls__current">01</span> / <span class="controls__length">05</span></p>
+      <button class="controls__button controls__button--next">вперед</button>
+    </div>
+  </section>
+  <section class="tours">
+    <h2 class="tours__title title">Уникальные каникулярные туры за границу</h2>
+    <p class="tours__desc desc">помогают быстрее и легче осваивать иностранные языки</p>
+    <div class="tours__tabs tabs">
+      <ul class="tabs__list">
+        <li class="tabs__item tabs__item--active" data-tabs="1">Каникулярные программы для детей</li>
+        <li class="tabs__item" data-tabs="2">Корпоративные туры для взрослых</li>
+      </ul>
+      <div class="tabs__content tabs__content--active" data-content="1">
+        <ul class="tours__list">
+          <li class="tours__item">
+            <a href="#" class="tours__inner">
+              <picture class="tours__img">
+                <source type="image/webp" srcset="">
+                <img src="" alt="">
+              </picture>
+              <p class="courses__name">Лос-Анджелес</p>
+              <div class="tours__row">
+                <p class="tours__date">09.07.2020</p>
+                <p class="tours__age">8 – 20 лет</p>
+              </div>
+              <p class="tours__price">4 700 $</p>
+            </a>
+          </li>
+          <li class="tours__item">
+            <a href="#" class="tours__inner">
+              <picture class="tours__img">
+                <source type="image/webp" srcset="">
+                <img src="" alt="">
+              </picture>
+              <p class="courses__name">Лос-Анджелес</p>
+              <div class="tours__row">
+                <p class="tours__date">09.07.2020</p>
+                <p class="tours__age">8 – 20 лет</p>
+              </div>
+              <p class="tours__price">4 700 $</p>
+            </a>
+          </li>
+          <li class="tours__item">
+            <a href="#" class="tours__inner">
+              <picture class="tours__img">
+                <source type="image/webp" srcset="">
+                <img src="" alt="">
+              </picture>
+              <p class="courses__name">Лос-Анджелес</p>
+              <div class="tours__row">
+                <p class="tours__date">09.07.2020</p>
+                <p class="tours__age">8 – 20 лет</p>
+              </div>
+              <p class="tours__price">4 700 $</p>
+            </a>
+          </li>
+          <li class="tours__item">
+            <a href="#" class="tours__inner">
+              <picture class="tours__img">
+                <source type="image/webp" srcset="">
+                <img src="" alt="">
+              </picture>
+              <p class="courses__name">Лос-Анджелес</p>
+              <div class="tours__row">
+                <p class="tours__date">09.07.2020</p>
+                <p class="tours__age">8 – 20 лет</p>
+              </div>
+              <p class="tours__price">4 700 $</p>
+            </a>
+          </li>
+          <li class="tours__item">
+            <a href="#" class="tours__inner">
+              <picture class="tours__img">
+                <source type="image/webp" srcset="">
+                <img src="" alt="">
+              </picture>
+              <p class="courses__name">Лос-Анджелес</p>
+              <div class="tours__row">
+                <p class="tours__date">09.07.2020</p>
+                <p class="tours__age">8 – 20 лет</p>
+              </div>
+              <p class="tours__price">4 700 $</p>
+            </a>
+          </li>
+          <li class="tours__item">
+            <a href="#" class="tours__inner">
+              <picture class="tours__img">
+                <source type="image/webp" srcset="">
+                <img src="" alt="">
+              </picture>
+              <p class="courses__name">Лос-Анджелес</p>
+              <div class="tours__row">
+                <p class="tours__date">09.07.2020</p>
+                <p class="tours__age">8 – 20 лет</p>
+              </div>
+              <p class="tours__price">4 700 $</p>
+            </a>
+          </li>
+          <li class="tours__item">
+            <a href="#" class="tours__inner">
+              <picture class="tours__img">
+                <source type="image/webp" srcset="">
+                <img src="" alt="">
+              </picture>
+              <p class="courses__name">Лос-Анджелес</p>
+              <div class="tours__row">
+                <p class="tours__date">09.07.2020</p>
+                <p class="tours__age">8 – 20 лет</p>
+              </div>
+              <p class="tours__price">4 700 $</p>
+            </a>
+          </li>
+          <li class="tours__item">
+            <a href="#" class="tours__inner">
+              <picture class="tours__img">
+                <source type="image/webp" srcset="">
+                <img src="" alt="">
+              </picture>
+              <p class="courses__name">Лос-Анджелес</p>
+              <div class="tours__row">
+                <p class="tours__date">09.07.2020</p>
+                <p class="tours__age">8 – 20 лет</p>
+              </div>
+              <p class="tours__price">4 700 $</p>
+            </a>
+          </li>
+          <li class="tours__item tours__item--info">
+            <a href="#" class="tours__inner">
+              <div class="tours__circle">
+                <picture class="tours__img">
+                  <source type="image/webp" srcset="">
+                  <img src="" alt="">
+                </picture>
+              </div>
+              <p class="courses__name">Лос-Анджелес</p>
+            </a>
+          </li>
+          <li class="tours__item tours__item--info">
+            <a href="#" class="tours__inner">
+              <div class="tours__circle">
+                <picture class="tours__img">
+                  <source type="image/webp" srcset="">
+                  <img src="" alt="">
+                </picture>
+              </div>
+              <p class="courses__name">Лос-Анджелес</p>
+            </a>
+          </li>
+          <li class="tours__item tours__item--info">
+            <a href="#" class="tours__inner">
+              <div class="tours__circle">
+                <picture class="tours__img">
+                  <source type="image/webp" srcset="">
+                  <img src="" alt="">
+                </picture>
+              </div>
+              <p class="courses__name">Лос-Анджелес</p>
+            </a>
+          </li>
+        </ul>
+        <div class="tours__controls controls">
+          <button class="controls__button controls__button--prev">назад</button>
+          <p class="controls__counter"><span class="controls__current">01</span> / <span class="controls__length">05</span></p>
+          <button class="controls__button controls__button--next">вперед</button>
+        </div>
+      </div>
+      <div class="tabs__content" data-content="2">
+        <ul class="tours__list">
+          <li class="tours__item">
+            <a href="#" class="tours__inner">
+              <picture class="tours__img">
+                <source type="image/webp" srcset="">
+                <img src="" alt="">
+              </picture>
+              <p class="courses__name">Лос-Анджелес</p>
+              <div class="tours__row">
+                <p class="tours__date">09.07.2020</p>
+                <p class="tours__age">8 – 20 лет</p>
+              </div>
+              <p class="tours__price">4 700 $</p>
+            </a>
+          </li>
+          <li class="tours__item">
+            <a href="#" class="tours__inner">
+              <picture class="tours__img">
+                <source type="image/webp" srcset="">
+                <img src="" alt="">
+              </picture>
+              <p class="courses__name">Лос-Анджелес</p>
+              <div class="tours__row">
+                <p class="tours__date">09.07.2020</p>
+                <p class="tours__age">8 – 20 лет</p>
+              </div>
+              <p class="tours__price">4 700 $</p>
+            </a>
+          </li>
+          <li class="tours__item">
+            <a href="#" class="tours__inner">
+              <picture class="tours__img">
+                <source type="image/webp" srcset="">
+                <img src="" alt="">
+              </picture>
+              <p class="courses__name">Лос-Анджелес</p>
+              <div class="tours__row">
+                <p class="tours__date">09.07.2020</p>
+                <p class="tours__age">8 – 20 лет</p>
+              </div>
+              <p class="tours__price">4 700 $</p>
+            </a>
+          </li>
+          <li class="tours__item">
+            <a href="#" class="tours__inner">
+              <picture class="tours__img">
+                <source type="image/webp" srcset="">
+                <img src="" alt="">
+              </picture>
+              <p class="courses__name">Лос-Анджелес</p>
+              <div class="tours__row">
+                <p class="tours__date">09.07.2020</p>
+                <p class="tours__age">8 – 20 лет</p>
+              </div>
+              <p class="tours__price">4 700 $</p>
+            </a>
+          </li>
+          <li class="tours__item">
+            <a href="#" class="tours__inner">
+              <picture class="tours__img">
+                <source type="image/webp" srcset="">
+                <img src="" alt="">
+              </picture>
+              <p class="courses__name">Лос-Анджелес</p>
+              <div class="tours__row">
+                <p class="tours__date">09.07.2020</p>
+                <p class="tours__age">8 – 20 лет</p>
+              </div>
+              <p class="tours__price">4 700 $</p>
+            </a>
+          </li>
+          <li class="tours__item">
+            <a href="#" class="tours__inner">
+              <picture class="tours__img">
+                <source type="image/webp" srcset="">
+                <img src="" alt="">
+              </picture>
+              <p class="courses__name">Лос-Анджелес</p>
+              <div class="tours__row">
+                <p class="tours__date">09.07.2020</p>
+                <p class="tours__age">8 – 20 лет</p>
+              </div>
+              <p class="tours__price">4 700 $</p>
+            </a>
+          </li>
+          <li class="tours__item">
+            <a href="#" class="tours__inner">
+              <picture class="tours__img">
+                <source type="image/webp" srcset="">
+                <img src="" alt="">
+              </picture>
+              <p class="courses__name">Лос-Анджелес</p>
+              <div class="tours__row">
+                <p class="tours__date">09.07.2020</p>
+                <p class="tours__age">8 – 20 лет</p>
+              </div>
+              <p class="tours__price">4 700 $</p>
+            </a>
+          </li>
+          <li class="tours__item">
+            <a href="#" class="tours__inner">
+              <picture class="tours__img">
+                <source type="image/webp" srcset="">
+                <img src="" alt="">
+              </picture>
+              <p class="courses__name">Лос-Анджелес</p>
+              <div class="tours__row">
+                <p class="tours__date">09.07.2020</p>
+                <p class="tours__age">8 – 20 лет</p>
+              </div>
+              <p class="tours__price">4 700 $</p>
+            </a>
+          </li>
+          <li class="tours__item tours__item--info">
+            <a href="#" class="tours__inner">
+              <div class="tours__circle">
+                <picture class="tours__img">
+                  <source type="image/webp" srcset="">
+                  <img src="" alt="">
+                </picture>
+              </div>
+              <p class="courses__name">Лос-Анджелес</p>
+            </a>
+          </li>
+          <li class="tours__item tours__item--info">
+            <a href="#" class="tours__inner">
+              <div class="tours__circle">
+                <picture class="tours__img">
+                  <source type="image/webp" srcset="">
+                  <img src="" alt="">
+                </picture>
+              </div>
+              <p class="courses__name">Лос-Анджелес</p>
+            </a>
+          </li>
+          <li class="tours__item tours__item--info">
+            <a href="#" class="tours__inner">
+              <div class="tours__circle">
+                <picture class="tours__img">
+                  <source type="image/webp" srcset="">
+                  <img src="" alt="">
+                </picture>
+              </div>
+              <p class="courses__name">Лос-Анджелес</p>
+            </a>
+          </li>
+        </ul>
+        <div class="tours__controls controls">
+          <button class="controls__button controls__button--prev">назад</button>
+          <p class="controls__counter"><span class="controls__current">01</span> / <span class="controls__length">05</span></p>
+          <button class="controls__button controls__button--next">вперед</button>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="tours__button button button--accent">
+      <span class="button__inner">Узнать больше</span>
+    </a>
+  </section>
+  <section class="free-lessons">
+    <h2 class="free-lessons__title title">Ученики EduStream мощно прокачивают свои языковые навыки</h2>
+    <p class="free-lessons__desc desc">на бесплатных еженедельных уроках</p>
+    <div class="free-lessons__tabs tabs">
+      <ul class="tabs__list">
+        <li class="tabs__item tabs__item--active" data-tabs="1">
+          <picture class="tabs__img">
+            <source type="image/webp" srcset="">
+            <img src="" alt="">
+          </picture>
+          HUCK DAYS
+        </li>
+        <li class="tabs__item" data-tabs="2">
+          <picture class="tabs__img">
+            <source type="image/webp" srcset="">
+            <img src="" alt="">
+          </picture>
+          SKILL DAYS
+        </li>
+        <li class="tabs__item" data-tabs="3">
+          <picture class="tabs__img">
+            <source type="image/webp" srcset="">
+            <img src="" alt="">
+          </picture>
+          SPEAKING CLUB
+        </li>
+        <li class="tabs__item" data-tabs="4">
+          <picture class="tabs__img">
+            <source type="image/webp" srcset="">
+            <img src="" alt="">
+          </picture>
+          THEME DAYS
+        </li>
+      </ul>
+      <div class="tabs__content tabs__content--active" data-content="1">
+        <div class="free-lessons__card">
+          <div class="free-lessons__top">
+            <div class="free-lessons__content">
+              <p><span>Huck days в EduStream</span> — это «взлом стереотипов» об английском языке.</p>
+              <p>Один раз в месяц мы приглашаем в нашу школу известных блогеров, маркетологов, продюсеров, актеров, чтобы они проводили для наших учеников мастер-классы.</p>
+              <p>Звездные гости общаются с учениками и попутно рассказывают о том, как им в жизни пригодился английский язык.</p>
+              <p><b>Маркетолог Слава Неруш</b> рассказал, как зарабатывать в новых условиях.</p>
+              <p><b>Актер и блогер Ерден Телемисов</b> — как раскрутиться в социальных сетях и снимать там даже кино.</p>
+              <p><b>Продюсер Мадина Абдрашитова</b> обучала ребят видео и фотосьемке.</p>
+              <p><b>Актриса Асель Джаксыбаева</b> делилась сценическими секретами. </p>
+              <p><b>Певица Диана Шарапова </b>— азами вокального мастерства. </p>
+            </div>
+            <div class="free-lessons__slider slider">
+              <ul class="slider__list">
+                <li class="slider__item">
+                  <picture>
+                    <source type="image/webp" srcset="">
+                    <img src="" alt="">
+                  </picture>
+                </li>
+                <li class="slider__item">
+                  <picture>
+                    <source type="image/webp" srcset="">
+                    <img src="" alt="">
+                  </picture>
+                </li>
+              </ul>
+              <div class="slider__control">
+                <button class="slider__button slider__button--prev">Назад</button>
+                <button class="slider__button slider__button--next">Вперед</button>
+              </div>
+              <button class="free-lessons__more">Читать полностью</button>
+            </div>
+          </div>
+          <ul class="free-lessons__list">
+            <li class="free-lessons__item">Как только ученики вошли, то тут же заявили: «Ой, что хор будет что ли!», я так растерялась, — поделилась Диана, — Но потом пели вместе со мной, раскрепостились. Попутно я рассказала им, как английский раскрывает передо мной мир. </li>
+            <li class="free-lessons__item">Сегодня время возможностей, мир открыт, — говорила детям продюсер Мадина Абдрашитова, — Каждый может стать репортером, самостоятельно снимать, писать, монтировать и выкладывать в интернет это. Главное не лениться.</li>
+            <li class="free-lessons__item"> Очень полезные встречи, нисколько не пожалели, что пришли. И субботы не жаль ради таких полезностей, — признавались ребята.</li>
+          </ul>
+          <ul class="free-lessons__bottom">
+            <li class="free-lessons__adv">Бесплатно для всех учеников EduStream</li>
+            <li class="free-lessons__adv">Периодичность занятий — 1 раз в месяц</li>
+            <li class="free-lessons__adv">Новые гости и новый опыт на каждой встрече</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="group">
+    <h2 class="group__title title">Формируем группы по уровню владения иностранным языком</h2>
+    <p class="group__desc desc">для максимального комфорта учеников</p>
+    <div class="group__inner">
+      <div class="group__language">
+        <p class="group__name">Какой язык вы хотите изучать?</p>
+        <ul class="group__list">
+          <li class="group__item">
+            <a href="#" class="group__link">
+              <picture class="group__icon">
+                <source type="image/webp" srcset="">
+                <img src="" alt="">
+              </picture>
+              Английский
+            </a>
+          </li>
+          <li class="group__item">
+            <a href="#" class="group__link">
+              <picture class="group__icon">
+                <source type="image/webp" srcset="">
+                <img src="" alt="">
+              </picture>
+              Немецкий
+            </a>
+          </li>
+          <li class="group__item">
+            <a href="#" class="group__link">
+              <picture class="group__icon">
+                <source type="image/webp" srcset="">
+                <img src="" alt="">
+              </picture>
+              Испанский
+            </a>
+          </li>
+        </ul>
+      </div>
+      <picture class="group__img">
+        <source type="image/webp" srcset="">
+        <img src="" alt="">
+      </picture>
+      <div class="group__categories">
+        <div class="group__row">
+          <p class="group__header">Свободное владение</p>
+          <ul class="group__list">
+            <li class="group__item"><b>C1</b>   — Уровень профессионального владения</li>
+            <li class="group__item"><b>C1</b>   — Уровень профессионального владения</li>
+          </ul>
+        </div>
+        <div class="group__row">
+          <p class="group__header">Свободное владение</p>
+          <ul class="group__list">
+            <li class="group__item"><b>C1</b>   — Уровень профессионального владения</li>
+            <li class="group__item"><b>C1</b>   — Уровень профессионального владения</li>
+          </ul>
+        </div>
+        <div class="group__row">
+          <p class="group__header">Свободное владение</p>
+          <ul class="group__list">
+            <li class="group__item"><b>C1</b>   — Уровень профессионального владения</li>
+            <li class="group__item"><b>C1</b>   — Уровень профессионального владения</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <section class="express-publishing">
+    <h2 class="express-publishing__title title">Преподаем по уникальной методике Express Publishing</h2>
+    <ul class="express-publishing__list">
+      <li class="express-publishing__item">
+        <p class="express-publishing__header">Дифференцированное обучение — <b>восприятие информации наиболее удобным способом</b></p>
+        <p class="express-publishing__text">Каждый ученик особенный. По-особому устроен его мозг, возможности восприятия и обучаемости. Материалы Express Publishing, по которым мы преподаем, разрабатываются с учетом индивидуальных возможностей учеников определенного возраста. Группы также дифференцируются и формируются из учеников с близким языковым уровнем.</p>
+        <picture class="express-publishing__img">
+          <source type="image/webp" srcset="">
+          <img src="" alt="">
+        </picture>
+      </li>
+      <li class="express-publishing__item">
+        <p class="express-publishing__header">Коммуникация и сотрудничество —<b>быстрое развитие основных языковых навыков</b></p>
+        <p class="express-publishing__text">Учащиеся работают в парах или группах и учатся сотрудничать друг с другом. Это самый эффективный вид обучения. Именно в группах правльно развиваются навыки аудирования, чтения, презентации и говорения в диалогической и монологической формах.</p>
+        <picture class="express-publishing__img">
+          <source type="image/webp" srcset="">
+          <img src="" alt="">
+        </picture>
+      </li>
+      <li class="express-publishing__item">
+        <p class="express-publishing__header">Межпредметная связь CLIL — <b>одновременное изучение предметного содержания и английского языка</b></p>
+        <p class="express-publishing__text">Каждый ученик особенный. По-особому устроен его мозг, возможности восприятия и обучаемости. Материалы Express Publishing, по которым мы преподаем, разрабатываются с учетом индивидуальных возможностей учеников определенного возраста. Группы также дифференцируются и формируются из учеников с близким языковым уровнем.</p>
+        <picture class="express-publishing__img">
+          <source type="image/webp" srcset="">
+          <img src="" alt="">
+        </picture>
+      </li>
+    </ul>
+    <div class="express-publishing__controls controls">
+      <button class="controls__button controls__button--prev">назад</button>
+      <p class="controls__counter"><span class="controls__current">01</span> / <span class="controls__length">05</span></p>
+      <button class="controls__button controls__button--next">вперед</button>
+    </div>
+  </section>
+  <section class="teachers">
+    <h2 class="teachers__title">Вас и ваших детей будут обучать преподаватели с большим опытом</h2>
+    <!--  Сделаю попозже, сразу со стилями и js, чтобы не переделывать разметку потом -->
+  </section>
+  <section class="reviews">
+    <h2 class="reviews__title title">С 2014 года наши ученики свободно говорят на английском, немецком и испанском языках</h2>
+    <div class="reviews__top">
+      <ul class="reviews__video-list">
+        <li class="reviews__video-item">
+          <div class="reviews__img">
+            <a href="#" class="reviews__play">Плей</a>
+          </div>
+          <p class="reviews__name">Мерей Заманбеккызы, студентка</p>
+          <p class="reviews__about">О языковой школе EduStream</p>
+        </li>
+        <li class="reviews__video-item">
+          <div class="reviews__img">
+            <a href="#" class="reviews__play">Плей</a>
+          </div>
+          <p class="reviews__name">Мерей Заманбеккызы, студентка</p>
+          <p class="reviews__about">О языковой школе EduStream</p>
+        </li>
+      </ul>
+      <div class="reviews__controls controls">
+        <button class="controls__button controls__button--prev">назад</button>
+        <button class="controls__button controls__button--next">вперед</button>
+      </div>
+    </div>
+    <div class="reviews__bottom">
+      <ul class="reviews__list">
+        <li class="reviews__item">
+          <picture class="reviews__img">
+            <source type="image/webp" srcset="">
+            <img src="" alt="">
+          </picture>
+          <div class="reviews__content">
+            <p class="reviews__name">Ерден Телемисов</p>
+            <p class="reviews__position">Актер, каскадер</p>
+            <p class="reviews__text">С начала года моя дочь начала учить английский в алматинской школе EduStream. Спасибо педагогам за интересные уроки, дочь ходит на занятия с большим желанием. С начала года моя дочь начала учить английский в алматинской школе EduStream. Спасибо педагогам за интересные уроки, дочь ходит на занятия с большим желанием.</p>
+            <button class="reviews__more">Развернуть</button>
+          </div>
+        </li>
+        <li class="reviews__item">
+          <picture class="reviews__img">
+            <source type="image/webp" srcset="">
+            <img src="" alt="">
+          </picture>
+          <div class="reviews__content">
+            <p class="reviews__name">Ерден Телемисов</p>
+            <p class="reviews__position">Актер, каскадер</p>
+            <p class="reviews__text">С начала года моя дочь начала учить английский в алматинской школе EduStream. Спасибо педагогам за интересные уроки, дочь ходит на занятия с большим желанием. С начала года моя дочь начала учить английский в алматинской школе EduStream. Спасибо педагогам за интересные уроки, дочь ходит на занятия с большим желанием.</p>
+            <button class="reviews__more">Развернуть</button>
+          </div>
+        </li>
+      </ul>
+      <div class="reviews__controls controls">
+        <button class="controls__button controls__button--prev">назад</button>
+        <button class="controls__button controls__button--next">вперед</button>
+      </div>
+    </div>
+  </section>
+  <section class="banner">
+    <div class="banner__inner">
+      <div class="banner__left">
+        <h2 class="banner__title">Приходите на первое занятие бесплатно!</h2>
+        <ul class="banner__list">
+          <li class="banner__item">
+            <div class="banner__icon">
+              <picture class="banner__img">
+                <source type="image/webp" srcset="">
+                <img src="" alt="">
+              </picture>
+            </div>
+            Оцените обстановку и дружелюбную атмосферу в нашей школе
+          </li>
+          <li class="banner__item">
+            <div class="banner__icon">
+              <picture class="banner__img">
+                <source type="image/webp" srcset="">
+                <img src="" alt="">
+              </picture>
+            </div>
+            Оцените обстановку и дружелюбную атмосферу в нашей школе
+          </li>
+          <li class="banner__item">
+            <div class="banner__icon">
+              <picture class="banner__img">
+                <source type="image/webp" srcset="">
+                <img src="" alt="">
+              </picture>
+            </div>
+            Оцените обстановку и дружелюбную атмосферу в нашей школе
+          </li>
+        </ul>
+      </div>
+      <div class="banner__right">
+        <p class="banner__accent">Количество мест ограничено.</p>
+        <p class="banner__action">Успейте записаться!</p>
+        <a href="#" class="banner__button button button--accent">
+          <span class="button__inner">Записаться</span>
+        </a>
+        <div class="banner__time">
+          <p class="bunner__label">До ближайшего пробного занятия</p>
+          <!--  Решение на js  -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="text-block">
+    <picture class="text-block__img">
+      <source type="image/webp" srcset="">
+      <img src="" alt="">
+    </picture>
+    <div class="text-block__content">
+      <h2 class="text-block__title title">Заголовок SEO-текста</h2>
+      <p>Образовательная  компания  «EDUStream» была основана в 2014  году. Она работает в трех  направлениях: Центр Изучения Языков, Центр Образования за Рубежом и официальный эксклюзивный представитель международного издательства ExpressPublishing.  А теперь подробнее.</p>
+      <p>Образовательная  компания  «EDUStream» была основана в 2014  году. Она работает в трех  направлениях: Центр Изучения Языков, Центр Образования за Рубежом и официальный эксклюзивный представитель международного издательства ExpressPublishing.  А теперь подробнее.</p>
+      <a href="" class="text-block__button button button--border">подробнее</a>
+    </div>
+  </section>
+  <section class="contacts">
+    <h2 class="contacts__title">Ждем вас в наших Языковых школах</h2>
+    <p class="contacts__desc">в Алматы и Нур-Султане</p>
+    <div class="contacts__tabs tabs">
+      <ul class="tabs__list">
+        <li class="tabs__item tabs__item--active" data-tabs="1">Алматы</li>
+        <li class="tabs__item" data-tabs="2">Нур-Сулан</li>
+      </ul>
+      <div class="tabs__content tabs__content--active" data-content="1">
+        <div class="contacts__left">
+          <p class="contacts__position">Богенбай батыра 104 — 1 этаж</p>
+          <div class="contacts__phones">
+            <a href="tel:87272938589" class="contacts__phone">8 (727) 293-85-89</a>
+            <a href="tel:87272938589" class="contacts__phone">8 (727) 293-85-89</a>
+          </div>
+          <p class="contacts__time">пн-пт: 9:00-20:00 / сб: 10:00-17:00</p>
+          <a href="mailto:info@edustream.kz" class="contacts__email">info@edustream.kz</a>
+          <ul class="contacts__list social">
+            <li class="social__item">
+              <picture class="social__img">
+                <source type="image/webp" srcset="">
+                <img src="" alt="">
+              </picture>
+            </li>
+            <li class="social__item">
+              <picture class="social__img">
+                <source type="image/webp" srcset="">
+                <img src="" alt="">
+              </picture>
+            </li>
+            <li class="social__item">
+              <picture class="social__img">
+                <source type="image/webp" srcset="">
+                <img src="" alt="">
+              </picture>
+            </li>
+            <li class="social__item">
+              <picture class="social__img">
+                <source type="image/webp" srcset="">
+                <img src="" alt="">
+              </picture>
+            </li>
+          </ul>
+        </div>
+        <div class="contacts__map">
+          <!--    Тут будет карта      -->
+        </div>
+      </div>
+      <div class="tabs__content" data-content="2">
+        <div class="contacts__left">
+          <p class="contacts__position">Богенбай батыра 104 — 1 этаж</p>
+          <div class="contacts__phones">
+            <a href="tel:87272938589" class="contacts__phone">8 (727) 293-85-89</a>
+            <a href="tel:87272938589" class="contacts__phone">8 (727) 293-85-89</a>
+          </div>
+          <p class="contacts__time">пн-пт: 9:00-20:00 / сб: 10:00-17:00</p>
+          <a href="mailto:info@edustream.kz" class="contacts__email">info@edustream.kz</a>
+          <ul class="contacts__list social">
+            <li class="social__item">
+              <picture class="social__img">
+                <source type="image/webp" srcset="">
+                <img src="" alt="">
+              </picture>
+            </li>
+            <li class="social__item">
+              <picture class="social__img">
+                <source type="image/webp" srcset="">
+                <img src="" alt="">
+              </picture>
+            </li>
+            <li class="social__item">
+              <picture class="social__img">
+                <source type="image/webp" srcset="">
+                <img src="" alt="">
+              </picture>
+            </li>
+            <li class="social__item">
+              <picture class="social__img">
+                <source type="image/webp" srcset="">
+                <img src="" alt="">
+              </picture>
+            </li>
+          </ul>
+        </div>
+        <div class="contacts__map">
+          <!--    Тут будет карта      -->
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+@@include('../blocks/footer/footer.html')
+<script src="js/vendor.js"></script>
+<script src="js/general.js"></script>
+</body>
+</html>
