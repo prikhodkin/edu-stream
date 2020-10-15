@@ -5,8 +5,6 @@
   <title>Gulp v4.1</title>
   @@include('../blocks/favicon/favicon.html')
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="js/vendor.js"></script>
-  <script src="js/general.js" async></script>
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -126,7 +124,7 @@
     <span class="burger__inner">Открыть меню</span>
   </button>
 </header>
-<secition class="intro">
+<section class="intro">
   <h1 class="intro__title">Языковая школа EduStream</h1>
   <ul class="intro__list">
     <li class="intro__item">
@@ -145,7 +143,61 @@
         </div>
       </a>
     </li>
+    <li class="intro__item">
+      <a href="#" class="intro__inner">
+        <div class="intro__wrapper">
+          <div class="intro__bg"></div>
+          <picture class="intro__img">
+            <source srcset="../img/intro-two.webp" type="image/webp">
+            <img src="../img/intro-two.png" alt="intro">
+          </picture>
+        </div>
+        <p class="intro__header">EduStream</p>
+        <p class="intro__text">Обучение иностранным языкам в Алматы и Нур-Султане</p>
+        <ul class="intro__flags flags">
+          <li class="flags__item">
+            <picture class="flags__img">
+              <source type="image/webp" srcset="../img/flag-1.webp">
+              <img src="../img/flag-1.png" alt="flag">
+            </picture>
+          </li>
+          <li class="flags__item">
+            <picture class="flags__img">
+              <source type="image/webp" srcset="../img/flag-2.webp">
+              <img src="../img/flag-2.png" alt="flag">
+            </picture>
+          </li>
+          <li class="flags__item">
+            <picture class="flags__img">
+              <source type="image/webp" srcset="../img/flag-3.webp">
+              <img src="../img/flag-3.png" alt="flag">
+            </picture>
+          </li>
+        </ul>
+        <div class="intro__button button button--border">
+          <span class="button__inner">Перейти в языковую школу</span>
+        </div>
+      </a>
+    </li>
+    <li class="intro__item">
+      <a href="#" class="intro__inner">
+        <div class="intro__wrapper">
+          <div class="intro__bg"></div>
+          <picture class="intro__img">
+            <source srcset="../img/intro-three.webp" type="image/webp">
+            <img src="../img/intro-three.png" alt="intro">
+          </picture>
+        </div>
+        <p class="intro__name">Партнер британского издательства Express Publishing в Казахстане</p>
+        <p class="intro__text">Smiles Excel Aspect Action</p>
+        <div class="intro__button button button--border">
+          <span class="button__inner">Подробнее об издательстве</span>
+        </div>
+      </a>
+    </li>
   </ul>
-</secition>
+</section>
+<script src="js/vendor.js"></script>
+<script src="js/general.js"></script>
 </body>
 </html>

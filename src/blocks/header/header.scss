@@ -1,9 +1,14 @@
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2000;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  min-height: 100px;
+  width: 100%;
   padding: 15px;
+  background-color: #f3f7fa;
 }
 
 .header__logo {
@@ -67,8 +72,8 @@
 
 @media (min-width: 1000px) {
   .header {
-    position: relative;
     align-items: stretch;
+    min-height: 100px;
     padding-top: 6px;
     padding-bottom: 0;
     background-color: #ffffff;

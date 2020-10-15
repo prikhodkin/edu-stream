@@ -1,9 +1,7 @@
-import Turbolinks from "turbolinks";
 import { Application } from "stimulus"
 import { definitionsFromContext } from "stimulus/webpack-helpers"
 import Tabs from "%modules%/tabs/tabs"
 import $ from "jquery";
-Turbolinks.start();
 
 const application = Application.start()
 const context = require.context("./controllers", true, /\.js$/);
@@ -20,7 +18,7 @@ $(`.burger`).on(`click`, (evt) => {
 const subItems = document.querySelectorAll(`.navigation__sub-item`);
 const dropdownItems = document.querySelectorAll(`.navigation__dropdown-item`);
 const changeWidth = (item) => {
-  item.style.width = item.offsetWidth + 3 + 'px';
+  item.style.width = item.offsetWidth + 5 + 'px';
 }
 
 subItems.forEach((item) => changeWidth(item));
