@@ -1,0 +1,14 @@
+.intro {
+  min-height: calc(100vh - 100px);
+  background-color: #f3f7fa;
+  background-image: url("../../img/intro-bg@mobile.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (min-width: 540px) {
+  .intro {
+    background-image: url("../../img/intro-bg@desktop.png");
+    background-position: top;
+  }
+}

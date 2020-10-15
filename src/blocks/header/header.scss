@@ -1,0 +1,135 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  min-height: 100px;
+  padding: 15px;
+}
+
+.header__logo {
+  width: 195px;
+  margin-right: 30px;
+}
+
+.header__inner {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 90px;
+  padding-right: 20px;
+  padding-bottom: 50px;
+  padding-left: 20px;
+  background-color: #66b2e3;
+  background-image: url("../../img/shadow-menu@mobile.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  transition: all 0.3s ease-in-out;
+
+  &--active {
+    left: 0;
+  }
+}
+
+.header__callback {
+  display: none;
+}
+
+.header__get-course {
+  margin-top: auto;
+  margin-bottom: 28px;
+}
+
+.header__controls {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header__button {
+  width: calc(50% - 7px);
+}
+
+.header__phone {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  font-weight: 700;
+  font-size: 16px;
+  color: #ffffff;
+  transform: translateX(-50%);
+}
+
+@media (min-width: 1000px) {
+  .header {
+    position: relative;
+    align-items: stretch;
+    padding-top: 6px;
+    padding-bottom: 0;
+    background-color: #ffffff;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .header__inner {
+    position: unset;
+    top: unset;
+    left: unset;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    min-height: unset;
+    padding: 0;
+    background-color: transparent;
+    background-image: unset;
+    transform: translateX(0);
+  }
+
+  .header__phone {
+    position: relative;
+    top: unset;
+    left: unset;
+    margin-bottom: 5px;
+    font-size: 24px;
+    color: #2b2a28;
+    transform: translateX(0);
+  }
+
+  .header__controls {
+    display: none;
+  }
+
+  .header__callback {
+    display: inline-block;
+    font-size: 13px;
+    color: #0071c9;
+    text-decoration: underline;
+  }
+
+  .header__logo {
+    width: 100px;
+    min-width: 100px;
+  }
+
+  .header__contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 16px;
+    margin-left: auto;
+  }
+
+  .header__get-course {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header {
+    @include page-wrapper;
+  }
+}

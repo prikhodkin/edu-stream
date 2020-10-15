@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <title>Gulp v4.1</title>
   @@include('../blocks/favicon/favicon.html')
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="js/vendor.js"></script>
-  <script src="js/general.js" defer></script>
+  <script src="js/general.js" async></script>
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -20,6 +21,10 @@
   </a>
   <div class="header__inner">
     <nav class="header__navigation navigation">
+      <picture class="navigation__logo">
+        <source srcset="../img/logo@menu.webp" type="image/webp">
+        <img src="../img/logo@menu.png" alt="logo">
+      </picture>
       <div class="navigation__top menu">
         <ul class="menu__list">
           <li class="menu__item"><a href="#">О компании</a></li>
@@ -121,5 +126,26 @@
     <span class="burger__inner">Открыть меню</span>
   </button>
 </header>
+<secition class="intro">
+  <h1 class="intro__title">Языковая школа EduStream</h1>
+  <ul class="intro__list">
+    <li class="intro__item">
+      <a href="#" class="intro__inner">
+        <div class="intro__wrapper">
+          <div class="intro__bg"></div>
+          <picture class="intro__img">
+            <source srcset="../img/intro-one.webp" type="image/webp">
+            <img src="../img/intro-one.png" alt="intro">
+          </picture>
+        </div>
+        <p class="intro__name">Помощь с поступлением в иностранные вузы</p>
+        <p class="intro__text">Австрия Литва Англия США Канада Австралия Нидерланды</p>
+        <div class="intro__button button button--border">
+          <span class="button__inner">Узнать о поступлении</span>
+        </div>
+      </a>
+    </li>
+  </ul>
+</secition>
 </body>
 </html>
