@@ -1,0 +1,48 @@
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.controls__button {
+  width: 57px;
+  height: 19px;
+  font-size: 0;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  appearance: none;
+
+  &--prev {
+    margin-right: auto;
+    background-image: url("../../img/arrow-left.png");
+
+    &:hover {
+      background-image: url("../../img/arrow-left-hover.png");
+    }
+  }
+
+  &--next {
+    margin-left: auto;
+    background-image: url("../../img/arrow-right.png");
+
+    &:hover {
+      background-image: url("../../img/arrow-right-hover.png");
+    }
+  }
+}
+
+
+.controls__current {
+  font-weight: 300;
+  color: #000000;
+}
+
+.controls__length {
+  font-size: 14px;
+  color: #aeaeae;
+}
