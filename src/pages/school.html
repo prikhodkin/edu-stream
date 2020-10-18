@@ -7,12 +7,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
+<body class="page">
 @@include('../blocks/header/header.html')
-<main>
+<main class="page__main">
   <section class="breadcrumbs">
     <h2 class="visually-hidden">Хлебные крошки</h2>
-    <ul class="breadcrumbs__list"></ul>
+    <ul class="breadcrumbs__list">
+      <li class="breadcrumbs__item"><a href="/">Главная</a></li>
+      <li class="breadcrumbs__item">Языковая школа</li>
+    </ul>
   </section>
   <section class="promo">
     <div class="promo__top">
@@ -21,39 +24,43 @@
         <p class="promo__text">Начните говорить на иностранном языке уже через 30 дней</p>
       </div>
       <picture class="promo__img">
-        <source type="image/webp" srcset="">
-        <img src="" alt="">
+        <source type="image/webp" media="(min-width: 600px)" srcset="../img/promo-school@desktop.webp">
+        <source media="(min-width: 600px)" srcset="../img/promo-school@desktop.png">
+        <source type="image/webp" srcset="../img/promo-school@mobile.webp">
+        <img src="../img/promo-school@mobile.png" alt="promo">
       </picture>
     </div>
     <div class="promo__bottom">
       <ul class="promo__list">
         <li class="promo__item">
           <div class="promo__icon">
-            <img src="" alt="">
+            <img src="../img/gift-icon.png" alt="">
           </div>
           Каждое 4-е занятие в подарок
         </li>
         <li class="promo__item">
           <div class="promo__icon">
-            <img src="" alt="">
+            <img src="../img/group-icon.png" alt="">
           </div>
           Группы из 4-10 человек с одинаковым уровнем знаний
         </li>
         <li class="promo__item">
           <div class="promo__icon">
-            <img src="" alt="">
+            <img src="../img/girl-icon.png" alt="">
           </div>
           Проводим занятия с носителями языка
         </li>
       </ul>
       <div class="promo__place place">
-        <div class="place__content">
-          <p class="place__title">Первый урок бесплатно!</p>
-          <p class="place__text">Запишитесь на пробное занятие и познакомьтесь с нашей школой поближе</p>
+        <div class="place__inner">
+          <div class="place__content">
+            <p class="place__title">Первый урок бесплатно!</p>
+            <p class="place__text">Запишитесь на пробное занятие и познакомьтесь с нашей школой поближе</p>
+          </div>
+          <a href="#" class="place__button button button--accent">
+            <span class="button__inner">Записаться</span>
+          </a>
         </div>
-        <a href="#" class="place__button button button--accent">
-          <span class="button__inner">Записаться</span>
-        </a>
       </div>
     </div>
   </section>
@@ -62,24 +69,24 @@
     <ul class="methods__list">
       <li class="methods__item">
         <picture class="methods__img">
-          <source type="image/webp" srcset="">
-          <img src="" alt="">
+          <source type="image/webp" srcset="../img/mthods-01.webp">
+          <img src="../img/mthods-01.png" alt="1">
         </picture>
         <p class="methods__name">Современные технологии и сбалансированный подход</p>
         <p class="methods__text">Учим по уникальным методикам и развиваем языковые компетенции 21 века: коммуникации, коллаборации, креативность, критическое мышление.</p>
       </li>
       <li class="methods__item">
         <picture class="methods__img">
-          <source type="image/webp" srcset="">
-          <img src="" alt="">
+          <source type="image/webp" srcset="../img/mthods-02.webp">
+          <img src="../img/mthods-02.png" alt="1">
         </picture>
         <p class="methods__name">Геймификация и вовлечение</p>
         <p class="methods__text">Внедряем в процесс обучения элементы соперничества. Ученики соревнуются, видят свой прогресс в обучении и получают мощную мотивацию к дальнейшему изучению языка.</p>
       </li>
       <li class="methods__item">
         <picture class="methods__img">
-          <source type="image/webp" srcset="">
-          <img src="" alt="">
+          <source type="image/webp" srcset="../img/mthods-03.webp">
+          <img src="../img/mthods-03.png" alt="1">
         </picture>
         <p class="methods__name">Разные каналы передачи информации </p>
         <p class="methods__text">В учебных пособиях гармонично сочетаются слова и зрительные образы, активно используются графические и аудио материалы.</p>
@@ -92,46 +99,46 @@
       <li class="courses__item">
         <a href="#" class="courses__inner">
           <picture class="courses__img">
-            <source type="image/webp" srcset="">
-            <img src="" alt="">
+            <source type="image/webp" srcset="../img/course-1.webp">
+            <img src="../img/course-1.png" alt="1">
           </picture>
-          <p class="courses__name">Английский для детей</p>
+          <p class="courses__name">Английский<br> для детей</p>
         </a>
       </li>
       <li class="courses__item">
         <a href="#" class="courses__inner">
           <picture class="courses__img">
-            <source type="image/webp" srcset="">
-            <img src="" alt="">
+            <source type="image/webp" srcset="../img/course-02.webp">
+            <img src="../img/course-02.png" alt="1">
           </picture>
-          <p class="courses__name">Английский для взрослых</p>
+          <p class="courses__name">Английский<br>  для взрослых</p>
         </a>
       </li>
       <li class="courses__item">
         <a href="#" class="courses__inner">
           <picture class="courses__img">
-            <source type="image/webp" srcset="">
-            <img src="" alt="">
+            <source type="image/webp" srcset="../img/course-3.webp">
+            <img src="../img/course-3.png" alt="1">
           </picture>
-          <p class="courses__name">Подготовка к IELTS</p>
+          <p class="courses__name">Подготовка<br>  к IELTS</p>
         </a>
       </li>
       <li class="courses__item">
         <a href="#" class="courses__inner">
           <picture class="courses__img">
-            <source type="image/webp" srcset="">
-            <img src="" alt="">
+            <source type="image/webp" srcset="../img/course-4.webp">
+            <img src="../img/course-4.png" alt="1">
           </picture>
-          <p class="courses__name">Немецкий язык</p>
+          <p class="courses__name">Немецкий<br>  язык</p>
         </a>
       </li>
       <li class="courses__item">
         <a href="#" class="courses__inner">
           <picture class="courses__img">
-            <source type="image/webp" srcset="">
-            <img src="" alt="">
+            <source type="image/webp" srcset="../img/course-5.webp">
+            <img src="../img/course-5.png" alt="1">
           </picture>
-          <p class="courses__name">Испанский язык</p>
+          <p class="courses__name">Испанский<br>  язык</p>
         </a>
       </li>
     </ul>
