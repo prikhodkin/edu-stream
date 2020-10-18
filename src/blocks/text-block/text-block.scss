@@ -1,0 +1,24 @@
+.text-block {
+  padding: 20px;
+  padding-top: 75px;
+}
+
+.text-block__img {
+  display: none;
+}
+
+.text-block__content {
+
+  & p {
+    font-size: 14px;
+    line-height: 20px;
+    color: #535353;
+  }
+}
+
+.text-block__title {
+  margin-bottom: 30px;
+}
+
+.text-block__button {}
+
