@@ -1,0 +1,171 @@
+.promo {
+  padding: 20px 17px 30px 17px;
+}
+
+.promo__title {
+  margin-bottom: 25px;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  color: #2b2a28;
+
+  b {
+    font-weight: 700;
+  }
+}
+
+.promo__text {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 26px;
+  color: #2b2a28;
+}
+
+.promo__list {
+  @include list-reset;
+}
+
+.promo__item {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: #173e90;
+
+  &:not(:last-child) {
+    margin-bottom: 12px;
+  }
+}
+
+.promo__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  min-width: 50px;
+  height: 50px;
+  margin-right: 13px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px 0 rgba(103, 179, 228, 0.4);
+
+  img {
+    width: 60%;
+  }
+}
+
+.promo__img {
+  display: block;
+  margin-top: 10px;
+}
+
+.promo__place {
+  margin-top: 10px;
+
+  margin-bottom: 55px;
+}
+
+.promo__bottom {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+@media (min-width: 600px) {
+  .promo__place {
+    width: 570px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .promo__title {
+    margin-bottom: 50px;
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .promo__img {
+    width: 500px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1000px) {
+  .promo {
+    margin-top: -90px;
+    padding-top: 110px;
+    padding-bottom: 75px;
+    background-image: url("../../img/promo-bg@desktop.png");
+    //background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+
+  .promo__top {
+    display: flex;
+  }
+
+  .promo__bottom {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .promo__content {
+    width: 540px;
+  }
+
+  .promo__text {
+    width: 470px;
+    height: 30px;
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .promo {
+    @include page-wrapper;
+    padding-bottom: 135px;
+  }
+
+  .promo__bottom {
+    align-items: flex-start;
+  }
+
+  .promo__place {
+    margin: 0;
+    margin-left: auto;
+  }
+
+  .promo__item {
+    max-width: 400px;
+    font-size: 16px;
+
+    &:first-child {
+      margin-left: 45px;
+    }
+
+    &:nth-child(2) {
+      margin-left: 50px;
+    }
+
+    &:nth-child(3) {
+      margin-left: 35px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 17px;
+    }
+  }
+
+  .promo__img {
+    width: 572px;
+    margin: 0;
+    margin-top: -90px;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 1920px) {
+  .promo {
+    background-size: cover;
+  }
+}

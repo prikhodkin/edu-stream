@@ -1,0 +1,141 @@
+.courses {
+  padding: 40px 0;
+}
+
+.courses__title {
+  margin-bottom: 40px;
+}
+
+.courses__list {
+  @include list-reset;
+}
+
+.courses__item {
+  position: relative;
+  margin-bottom: 56px;
+  padding: 0 20px;
+
+  &::before {
+    @include pseudo;
+    position: absolute;
+    bottom: -56px;
+    left: 20px;
+    width: calc(100% - 96px);
+    height: 56px;
+    background-color: #ffffff;
+    border-radius: 0 0 0 15px;
+    box-shadow: 0 10px 25px 0 rgba(18, 50, 122, 0.15);
+  }
+
+  &::after {
+    @include pseudo;
+    position: absolute;
+    right: 32px;
+    bottom: -25px;
+    z-index: 10;
+    width: 13px;
+    height: 15px;
+    background-image: url("../../img/shape.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &:hover {
+    .courses__inner {
+      &::after {
+        border-top-color: #66b2e3;
+        border-left-color: #66b2e3;
+      }
+    }
+
+    .courses__name {
+      color: #66b2e3;
+    }
+  }
+}
+
+.courses__inner {
+  position: relative;
+  z-index: 10;
+  display: block;
+  padding: 0 0 15px 20px;
+  background-color: #ffffff;
+  border-radius: 15px 15px 0 0;
+  box-shadow: 0 10px 25px 0 rgba(18, 50, 122, 0.15);
+
+  &::before {
+    @include pseudo;
+    position: absolute;
+    bottom: -56px;
+    left: 0;
+    width: calc(100% - 56px);
+    height: 60px;
+    background-color: #ffffff;
+    border-radius: 0 0 0 15px;
+  }
+
+  &::after {
+    @include pseudo;
+    position: absolute;
+    right: 0;
+    bottom: -56px;
+    z-index: 10;
+    box-sizing: border-box;
+    width: 56px;
+    height: 56px;
+    border: 28px solid #ffaa00;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-radius: 15px 0 0 0;
+    transition: all 0.3s;
+  }
+}
+
+.courses__img {
+  display: block;
+  margin-bottom: 0;
+
+  img {
+    border-radius: 0 15px 0 0;
+  }
+}
+
+.courses__name {
+  position: relative;
+  bottom: -20px;
+  z-index: 10;
+  padding-right: 20px;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 24px;
+  color: #173e90;
+  transition: all 0.3s;
+
+  &::before {
+    @include pseudo;
+    position: absolute;
+    right: 40px;
+    bottom: 0;
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+  }
+}
+
+@media (min-width: 1000px) {
+  .courses {
+    padding-top: 35px;
+    padding-right: 17px;
+    padding-bottom: 45px;
+  }
+
+  .courses__title {
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .courses {
+    @include page-wrapper;
+  }
+}
