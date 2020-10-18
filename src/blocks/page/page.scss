@@ -1,0 +1,10 @@
+.page__main {
+  padding-top: 88px;
+  background-color: #f4f8fa;
+}
+
+@media (min-width: 1000px) {
+  .page__main {
+    padding-top: 100px;
+  }
+}
