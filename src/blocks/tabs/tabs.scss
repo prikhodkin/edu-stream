@@ -41,6 +41,7 @@
 @media (min-width: 600px) {
   .tabs__list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
   }
 
@@ -51,7 +52,6 @@
 
     &:not(:last-child) {
       margin-right: 30px;
-      margin-bottom: 0;
     }
   }
 }

@@ -494,30 +494,30 @@
   <section class="free-lessons">
     <h2 class="free-lessons__title title">Ученики EduStream мощно прокачивают свои языковые навыки</h2>
     <p class="free-lessons__desc desc">на бесплатных еженедельных уроках</p>
-    <div class="free-lessons__tabs tabs">
+    <div class="free-lessons__tabs tabs" data-tabs>
       <ul class="tabs__list">
-        <li class="tabs__item tabs__item--active" data-tabs="1">
+        <li class="tabs__item tabs__item--active" data-tab="1">
           <picture class="tabs__img">
             <source type="image/webp" srcset="">
             <img src="" alt="">
           </picture>
           HUCK DAYS
         </li>
-        <li class="tabs__item" data-tabs="2">
+        <li class="tabs__item" data-tab="2">
           <picture class="tabs__img">
             <source type="image/webp" srcset="">
             <img src="" alt="">
           </picture>
           SKILL DAYS
         </li>
-        <li class="tabs__item" data-tabs="3">
+        <li class="tabs__item" data-tab="3">
           <picture class="tabs__img">
             <source type="image/webp" srcset="">
             <img src="" alt="">
           </picture>
           SPEAKING CLUB
         </li>
-        <li class="tabs__item" data-tabs="4">
+        <li class="tabs__item" data-tab="4">
           <picture class="tabs__img">
             <source type="image/webp" srcset="">
             <img src="" alt="">
@@ -526,7 +526,7 @@
         </li>
       </ul>
       <div class="tabs__content tabs__content--active" data-content="1">
-        <div class="free-lessons__card">
+        <div class="free-lessons__card" data-controller="lessons-card">
           <div class="free-lessons__top">
             <div class="free-lessons__content">
               <p><span>Huck days в EduStream</span> — это «взлом стереотипов» об английском языке.</p>
@@ -538,26 +538,20 @@
               <p><b>Актриса Асель Джаксыбаева</b> делилась сценическими секретами. </p>
               <p><b>Певица Диана Шарапова </b>— азами вокального мастерства. </p>
             </div>
-            <div class="free-lessons__slider slider">
-              <ul class="slider__list">
+            <div class="free-lessons__slider slider" data-controller="slider">
+              <ul class="slider__list" data-target="slider.list">
                 <li class="slider__item">
-                  <picture>
-                    <source type="image/webp" srcset="">
-                    <img src="" alt="">
-                  </picture>
+                  <img src="../img/slider.jpg">
                 </li>
                 <li class="slider__item">
-                  <picture>
-                    <source type="image/webp" srcset="">
-                    <img src="" alt="">
-                  </picture>
+                  <img src="../img/slider.jpg">
                 </li>
               </ul>
               <div class="slider__control">
-                <button class="slider__button slider__button--prev">Назад</button>
-                <button class="slider__button slider__button--next">Вперед</button>
+                <button class="slider__button slider__button--prev" data-target="slider.prev">Назад</button>
+                <button class="slider__button slider__button--next" data-target="slider.next">Вперед</button>
               </div>
-              <button class="free-lessons__more">Читать полностью</button>
+              <button class="free-lessons__more" data-target="lessons-card.more">Читать полностью</button>
             </div>
           </div>
           <ul class="free-lessons__list">
