@@ -2,6 +2,7 @@
   padding: 20px;
   padding-top: 75px;
   padding-bottom: 40px;
+  background-color: #f4f8fa;
 
   & .button {
     justify-content: flex-start;
@@ -38,6 +39,7 @@
 @media (min-width: 768px) {
   .text-block {
     display: flex;
+    border-bottom: 1px solid #e8e8e8;
 
     & .button {
       display: flex;
@@ -78,5 +80,7 @@
 @media (min-width: 1200px) {
   .text-block {
     @include page-wrapper;
+    padding-top: 50px;
+    padding-bottom: 70px;
   }
 }
