@@ -2,7 +2,7 @@ import { Application } from "stimulus"
 import { definitionsFromContext } from "stimulus/webpack-helpers"
 import Tabs from "%modules%/tabs/tabs"
 import $ from "jquery";
-
+import { tns } from "tiny-slider/src/tiny-slider"
 const application = Application.start()
 const context = require.context("./controllers", true, /\.js$/);
 application.load(definitionsFromContext(context));
@@ -23,3 +23,10 @@ const changeWidth = (item) => {
 
 subItems.forEach((item) => changeWidth(item));
 dropdownItems.forEach((item) => changeWidth(item));
+
+const tabs = document.querySelectorAll(`[data-tabs]`);
+
+if(tabs) {
+  tabs.forEach((item) => new Tabs(item));
+}
+
