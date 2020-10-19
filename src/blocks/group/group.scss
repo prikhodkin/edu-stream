@@ -22,6 +22,7 @@
 .group__inner {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .group__left {
@@ -38,6 +39,27 @@
   color: #66b2e3;
 }
 
+.group__list {
+  @include list-reset;
+}
+
+.group__item .group__link {
+  margin-bottom: 20px;
+}
+
+.group__link {
+  display: flex;
+  align-items: center;
+  width: 188px;
+  height: 44px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  color: #173e90;
+  background-color: rgb(226, 238, 246);
+  border-radius: 20px;
+}
+
 .group__text {
   display: none;
 }
@@ -46,6 +68,16 @@
   width: 200px;
   height: 60px;
   margin-bottom: 10px;
+}
+
+.group__icon {
+  & img {
+    width: 60px;
+    height: 60px;
+    margin-top: 5px;
+    margin-right: 10px;
+    margin-left: -8px;
+  }
 }
 
 .group__img {
@@ -101,7 +133,6 @@
   .group__categories {
     display: block;
     width: 30%;
-    padding-top: 21px;
   }
 
   .group__row {
@@ -140,10 +171,6 @@
   .group__item {
     font-size: 14px;
     line-height: 16px;
-
-    &:first-child {
-      margin-bottom: 5px;
-    }
   }
 }
 
@@ -173,7 +200,7 @@
   }
 
   .group__desc {
-    margin-bottom: 90px;
+    margin-bottom: 86px;
     font-size: 20px;
     line-height: 24px;
   }
@@ -204,7 +231,7 @@
     z-index: 1;
 
     &:not(:last-child) {
-      margin-bottom: 11px;
+      margin-bottom: 18px;
     }
 
     &:nth-child(2) {
