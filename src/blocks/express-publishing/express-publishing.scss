@@ -1,0 +1,126 @@
+.express-publishing {
+  padding: 30px 20px;
+  padding-top: 40px;
+}
+
+.express-publishing__title {
+  margin-bottom: 100px;
+  color: #202020;
+}
+
+.express-publishing__list {
+  @include list-reset;
+  margin-bottom: 30px;
+}
+
+.express-publishing__item {
+  position: relative;
+  padding: 30px 12px;
+  padding-top: 150px;
+  background-color: rgb(255, 255, 255);
+  border: 3px solid rgb(216, 234, 245);
+  border-radius: 20px;
+}
+
+.express-publishing__header {
+  margin-bottom: 25px;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #202020;
+
+  & b {
+    font-weight: 700;
+  }
+}
+
+.express-publishing__text {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  color: #535353;
+}
+
+.express-publishing__img {
+  position: absolute;
+  top: -70px;
+  left: 50%;
+  width: 250px;
+  transform: translateX(-50%);
+}
+
+@media (min-width: 768px) {
+  .express-publishing__title {
+    margin-bottom: 70px;
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .express-publishing__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding: 25px 305px 20px 30px;
+
+    &:not(:last-child) {
+      margin-bottom: 35px;
+    }
+  }
+
+  .express-publishing__header {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: left;
+  }
+
+  .express-publishing__img {
+    top: 50%;
+    right: 0;
+    left: inherit;
+    width: 300px;
+    transform: translateY(-50%);
+  }
+
+  .express-publishing__controls {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .express-publishing {
+    @include page-wrapper;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .express-publishing__list {
+    max-width: 1030px;
+  }
+
+  .express-publishing__img {
+    right: -240px;
+    width: 376px;
+  }
+
+  .express-publishing__item {
+    width: 80%;
+    padding-right: 220px;
+
+    &:nth-of-type(2) {
+      align-items: flex-end;
+      margin-left: auto;
+      padding-right: 50px;
+      padding-left: 220px;
+
+      & .express-publishing__img {
+        top: 43%;
+        left: -208px;
+      }
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 65px;
+    }
+  }
+}
