@@ -159,11 +159,12 @@
     &::before {
       bottom: -10px;
       left: 15px;
-      z-index: -1;
       width: calc(100% - 20px);
-      height: 40px;
+      height: 18px;
       background-color: rgb(23, 62, 144);
       border-radius: 20px;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
       box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.1);
       opacity: 0.302;
     }
