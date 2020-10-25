@@ -36,3 +36,32 @@ if(tabs) {
   tabs.forEach((item) => new Tabs(item));
 }
 
+
+ymaps.ready(init);
+function init(){
+
+  console.log(`ff`);
+  const myMap = new ymaps.Map("map", {
+      center: [55, 55],
+      zoom: 7.5,
+      controls: [],
+    },
+    {
+      suppressMapOpenBlock: true
+    }
+  );
+
+  const myPlacemark = new ymaps.Placemark([55,55], {
+      hintContent: false,
+    },
+    {
+      iconLayout: 'default#image',
+      iconImageHref: "../img/map-pin.svg",
+      iconImageSize: [45, 65],
+      iconImageOffset: [-22.5, -32.5],
+      hideIconOnBalloonOpen: false,
+    });
+
+  myMap.geoObjects.add(myPlacemark);
+
+}
