@@ -20,19 +20,60 @@
   &:not(:last-child) {
     margin-bottom: 45px;
   }
+
+  &:nth-child(2) {
+    .methods__img {
+      &::before {
+        background-image: url("../../img/method-bg-2.png");
+      }
+
+      img {
+        mask-image: url("../../img/method-mask-2.png");
+      }
+    }
+  }
+
+  &:nth-child(3) {
+    .methods__img {
+      &::before {
+        background-image: url("../../img/method-bg-3.png");
+      }
+
+      img {
+        mask-image: url("../../img/method-mask-3.png");
+      }
+    }
+  }
 }
 
 .methods__img {
+  position: relative;
   display: block;
   height: 156px;
   margin: 0 auto;
   margin-bottom: 20px;
+
+  &::before {
+    @include pseudo;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../img/method-bg-1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
 
   img {
     display: block;
     width: auto;
     height: 100%;
     margin: 0 auto;
+    object-fit: cover;
+    mask: url("../../img/method-mask-1.png");
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
   }
 }
 
@@ -62,6 +103,10 @@
 
   .methods__name {
     font-size: 20px;
+  }
+
+  .methods__title {
+    font-size: 36px;
   }
 }
 

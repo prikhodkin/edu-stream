@@ -6,7 +6,13 @@ import { tns } from "tiny-slider/src/tiny-slider"
 const application = Application.start()
 const context = require.context("./controllers", true, /\.js$/);
 application.load(definitionsFromContext(context));
+global.jQuery = $;
 
+require ("@fancyapps/fancybox/dist/jquery.fancybox");
+
+$('[data-fancybox]').fancybox({
+  protect: true
+});
 
 $(`.burger`).on(`click`, (evt) => {
   evt.preventDefault();

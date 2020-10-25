@@ -61,6 +61,7 @@
     "yargs": "^15.4.1"
   },
   "dependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
     "hc-sticky": "^2.2.3",
     "jquery": "^3.5.1",
     "slick-carousel": "^1.8.1",

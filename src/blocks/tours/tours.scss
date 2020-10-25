@@ -56,11 +56,26 @@
 }
 
 .tours__img {
+  position: relative;
   display: block;
-  margin-bottom: 0;
+  height: 170px;
+  margin-bottom: 10px;
+
+  &::before {
+    @include pseudo;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 26px;
+    background-image: url("../../img/tour-before.png");
+  }
 
   img {
+    width: 100%;
+    height: 100%;
     border-radius: 15px 15px 0 0;
+    object-fit: cover;
   }
 }
 
@@ -145,6 +160,14 @@
   }
 
   &--info {
+    .tours__img {
+      height: unset;
+
+      &::before {
+        display: none;
+      }
+    }
+
     &::before {
       display: none;
     }
@@ -158,7 +181,7 @@
       flex-direction: column;
       align-items: center;
       padding: 20px;
-      background-color: #7cd0f0;
+      background-color: #66b2e3;
       border-radius: 15px;
 
       &::before {
@@ -319,5 +342,13 @@
 @media (min-width: 1920px) {
   .tours {
     background-size: cover;
+  }
+}
+
+@media (max-width: 1000px) {
+  .tours__list {
+    &--hidden {
+      display: none;
+    }
   }
 }

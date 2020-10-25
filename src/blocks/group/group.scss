@@ -48,16 +48,21 @@
 }
 
 .group__link {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  width: 188px;
   height: 44px;
+  padding-right: 30px;
   font-weight: 700;
   font-size: 16px;
   line-height: 18px;
   color: #173e90;
   background-color: rgb(226, 238, 246);
   border-radius: 20px;
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: #fec50c;
+  }
 }
 
 .group__text {
@@ -71,12 +76,21 @@
 }
 
 .group__icon {
-  & img {
-    width: 60px;
-    height: 60px;
-    margin-top: 5px;
-    margin-right: 10px;
-    margin-left: -8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  margin-right: 25px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
   }
 }
 
@@ -194,7 +208,7 @@
   }
 
   .group__title {
-    margin-bottom: 20px;
+    margin-bottom: 0;
     font-size: 30px;
     line-height: 40px;
   }
