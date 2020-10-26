@@ -47,6 +47,10 @@
   font-size: 20px;
   line-height: 26px;
   color: #2b2a28;
+
+  & + .promo__title {
+    margin-top: 10px;
+  }
 }
 
 .promo__list {
@@ -116,6 +120,7 @@
     //background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
+
   }
 
   .promo__top {
@@ -125,6 +130,7 @@
   .promo__bottom {
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
   }
 
   .promo__content {
@@ -132,9 +138,13 @@
   }
 
   .promo__text {
-    width: 470px;
+    width: 590px;
     height: 30px;
     font-size: 24px;
+
+    & + .promo__title {
+      margin-top: 25px;
+    }
   }
 
   .promo__bg {
@@ -157,6 +167,10 @@
   .promo {
     @include page-wrapper;
     padding-bottom: 135px;
+
+    &--inner {
+      padding-bottom: 65px;
+    }
   }
 
   .promo__title {
@@ -188,6 +202,10 @@
 
     &:nth-child(3) {
       margin-left: 35px;
+    }
+
+    &:nth-child(4) {
+      margin-left: 10px;
     }
 
     &:not(:last-child) {

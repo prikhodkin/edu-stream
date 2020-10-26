@@ -6,6 +6,10 @@
 .express-publishing__title {
   margin-bottom: 30px;
   color: #202020;
+
+  & + .express-publishing__desc {
+    margin-top: -20px;
+  }
 }
 
 .express-publishing__list {
@@ -69,12 +73,22 @@
   color: #535353;
 }
 
+.express-publishing__desc {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
 
 @media (min-width: 768px) {
   .express-publishing__title {
     margin-bottom: 70px;
     font-size: 30px;
     line-height: 37px;
+
+    & + .express-publishing__desc {
+      margin-top: -70px;
+      margin-bottom: 70px;
+    }
   }
 
   //.express-publishing__item {
@@ -152,6 +166,12 @@
 
     &:not(:last-child) {
       margin-bottom: 65px;
+    }
+  }
+
+  .express-publishing__header {
+    b {
+      display: block;
     }
   }
 }

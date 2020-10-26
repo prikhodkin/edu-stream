@@ -118,6 +118,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
+    min-height: 242px;
   }
 
   .group__left {
@@ -147,6 +148,7 @@
   .group__categories {
     display: block;
     width: 30%;
+    align-self: flex-end;
   }
 
   .group__row {

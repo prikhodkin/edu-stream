@@ -207,6 +207,13 @@
     justify-content: center;
     max-width: 1000px;
     margin: 0 auto;
+
+    &--inner {
+      max-width: unset;
+      margin-left: -15px;
+      margin-right: -15px;
+      padding: 0;
+    }
   }
 
   .courses__item {

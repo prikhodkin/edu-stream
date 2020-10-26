@@ -12,17 +12,19 @@
 <main class="page__main">
   <section class="breadcrumbs">
     <h2 class="visually-hidden">Хлебные крошки</h2>
-    <ul class="breadcrumbs__list"></ul>
+    <ul class="breadcrumbs__list">
+      <li class="breadcrumbs__item"><a href="/">Главная</a></li>
+      <li class="breadcrumbs__item">Языковая школа</li>
+    </ul>
   </section>
-  <section class="promo">
+  <section class="promo promo--inner">
     <div class="promo__top">
       <div class="promo__content">
         <h1 class="promo__title"><b>Курсы английского языка для взрослых</b> в Алматы и Нур-Султане</h1>
       </div>
-      <picture class="promo__img">
-        <source type="image/webp" srcset="">
-        <img src="" alt="">
-      </picture>
+      <div class="promo__bg">
+        <div class="promo__img"></div>
+      </div>
     </div>
     <div class="promo__bottom">
       <ul class="promo__list">
@@ -52,13 +54,15 @@
         </li>
       </ul>
       <div class="promo__place place">
-        <div class="place__content">
-          <p class="place__title">Первый урок бесплатно!</p>
-          <p class="place__text">Запишитесь на пробное занятие и познакомьтесь с нашей школой поближе</p>
+        <div class="place__inner">
+          <div class="place__content">
+            <p class="place__title">Первый урок бесплатно!</p>
+            <p class="place__text">Запишитесь на пробное занятие и познакомьтесь с нашей школой поближе</p>
+          </div>
+          <a href="#" class="place__button button button--accent">
+            <span class="button__inner">Записаться</span>
+          </a>
         </div>
-        <a href="#" class="place__button button button--accent">
-          <span class="button__inner">Записаться</span>
-        </a>
       </div>
     </div>
   </section>
@@ -107,92 +111,88 @@
       </li>
     </ul>
   </section>
-  <section class="courses">
+  <section class="courses" data-controller="slider-count">
     <h2 class="courses__title title">Наши языковые курсы для взрослых</h2>
-    <ul class="courses__list">
+    <ul class="courses__list" data-target="slider-count.list">
       <li class="courses__item">
         <a href="#" class="courses__inner">
           <picture class="courses__img">
-            <source type="image/webp" srcset="">
-            <img src="" alt="">
+            <img src="../img/course-img.png" alt="1">
           </picture>
-          <p class="courses__name">Для детей с 4 до 6 лет</p>
+          <p class="courses__name">Английский<br> для детей</p>
         </a>
       </li>
       <li class="courses__item">
         <a href="#" class="courses__inner">
           <picture class="courses__img">
-            <source type="image/webp" srcset="">
-            <img src="" alt="">
+            <img src="../img/course-img.png" alt="1">
           </picture>
-          <p class="courses__name">Для детей с 4 до 6 лет</p>
+          <p class="courses__name">Английский<br> для детей</p>
         </a>
       </li>
       <li class="courses__item">
         <a href="#" class="courses__inner">
           <picture class="courses__img">
-            <source type="image/webp" srcset="">
-            <img src="" alt="">
+            <img src="../img/course-img.png" alt="1">
           </picture>
-          <p class="courses__name">Для детей с 4 до 6 лет</p>
+          <p class="courses__name">Английский<br> для детей</p>
         </a>
       </li>
       <li class="courses__item">
         <a href="#" class="courses__inner">
           <picture class="courses__img">
-            <source type="image/webp" srcset="">
-            <img src="" alt="">
+            <img src="../img/course-img.png" alt="1">
           </picture>
-          <p class="courses__name">Для детей с 4 до 6 лет</p>
+          <p class="courses__name">Английский<br> для детей</p>
         </a>
       </li>
       <li class="courses__item">
         <a href="#" class="courses__inner">
           <picture class="courses__img">
-            <source type="image/webp" srcset="">
-            <img src="" alt="">
+            <img src="../img/course-img.png" alt="1">
           </picture>
-          <p class="courses__name">Для детей с 4 до 6 лет</p>
+          <p class="courses__name">Английский<br> для детей</p>
         </a>
       </li>
       <li class="courses__item">
         <a href="#" class="courses__inner">
           <picture class="courses__img">
-            <source type="image/webp" srcset="">
-            <img src="" alt="">
+            <img src="../img/course-img.png" alt="1">
           </picture>
-          <p class="courses__name">Для детей с 4 до 6 лет</p>
-        </a>
-      </li>
-      <li class="courses__item">
-        <a href="#" class="courses__inner">
-          <picture class="courses__img">
-            <source type="image/webp" srcset="">
-            <img src="" alt="">
-          </picture>
-          <p class="courses__name">Для детей с 4 до 6 лет</p>
+          <p class="courses__name">Английский<br> для детей</p>
         </a>
       </li>
     </ul>
     <div class="courses__controls controls">
-      <button class="controls__button controls__button--prev">назад</button>
-      <p class="controls__counter"><span class="controls__current">01</span> / <span class="controls__length">05</span></p>
-      <button class="controls__button controls__button--next">вперед</button>
+      <button class="controls__button controls__button--prev" data-target="slider-count.prev">назад</button>
+      <p class="controls__counter"><span class="controls__current" data-target="slider-count.current">01</span> / <span class="controls__length" data-target="slider-count.length">05</span></p>
+      <button class="controls__button controls__button--next" data-target="slider-count.next">вперед</button>
     </div>
   </section>
-  <section class="video">
-    <h2 class="video__title title">Посмотрите, как проходят наши занятия</h2>
-    <ul class="video__list">
-      <li class="video__item">
-        <a href="javascript://" class="video__play">Плей</a>
-      </li>
-      <li class="video__item">
-        <a href="javascript://" class="video__play">Плей</a>
-      </li>
-    </ul>
-    <div class="video__controls controls">
-      <button class="controls__button controls__button--prev">назад</button>
-      <button class="controls__button controls__button--next">вперед</button>
+  <section class="reviews" >
+    <h2 class="reviews__title title">Посмотрите, как проходят наши занятия</h2>
+    <div class="reviews__top" data-controller="reviews-video">
+      <ul class="reviews__video-list" data-target="reviews-video.list">
+        <li class="reviews__video-item">
+          <div class="reviews__img">
+            <a data-fancybox href="https://www.youtube.com/watch?v=EHg7DeciuW8&t=63s" class="reviews__play">Плей</a>
+          </div>
+        </li>
+        <li class="reviews__video-item">
+          <div class="reviews__img">
+            <a data-fancybox href="https://www.youtube.com/watch?v=EHg7DeciuW8&t=63s" class="reviews__play">Плей</a>
+          </div>
+        </li>
+        <li class="reviews__video-item">
+          <div class="reviews__img">
+            <a data-fancybox href="https://www.youtube.com/watch?v=EHg7DeciuW8&t=63s" class="reviews__play">Плей</a>
+          </div>
+        </li>
+      </ul>
+      <div class="reviews__controls controls">
+        <button class="controls__button controls__button--prev" data-target="reviews-video.prev">назад</button>
+        <button class="controls__button controls__button--next" data-target="reviews-video.next">вперед</button>
+      </div>
     </div>
   </section>
   <section class="gallery">
@@ -253,38 +253,36 @@
 
     </div>
   </section>
-  <section class="express-publishing">
+  <section class="express-publishing" data-controller="slider-count-one">
     <h2 class="express-publishing__title title">Преподаем по уникальной методике Express Publishing</h2>
-    <ul class="express-publishing__list">
+    <p class="express-publishing__desc desc">Ученики с легкостью осваивают программу</p>
+    <ul class="express-publishing__list" data-target="slider-count-one.list">
       <li class="express-publishing__item">
         <p class="express-publishing__header">Дифференцированное обучение — <b>восприятие информации наиболее удобным способом</b></p>
         <p class="express-publishing__text">Каждый ученик особенный. По-особому устроен его мозг, возможности восприятия и обучаемости. Материалы Express Publishing, по которым мы преподаем, разрабатываются с учетом индивидуальных возможностей учеников определенного возраста. Группы также дифференцируются и формируются из учеников с близким языковым уровнем.</p>
         <picture class="express-publishing__img">
-          <source type="image/webp" srcset="">
-          <img src="" alt="">
+          <img src="../img/express-publishing-img-1.png" alt="">
         </picture>
       </li>
       <li class="express-publishing__item">
         <p class="express-publishing__header">Коммуникация и сотрудничество —<b>быстрое развитие основных языковых навыков</b></p>
         <p class="express-publishing__text">Учащиеся работают в парах или группах и учатся сотрудничать друг с другом. Это самый эффективный вид обучения. Именно в группах правльно развиваются навыки аудирования, чтения, презентации и говорения в диалогической и монологической формах.</p>
         <picture class="express-publishing__img">
-          <source type="image/webp" srcset="">
-          <img src="" alt="">
+          <img src="../img/express-publishing-img-1.png" alt="">
         </picture>
       </li>
       <li class="express-publishing__item">
         <p class="express-publishing__header">Межпредметная связь CLIL — <b>одновременное изучение предметного содержания и английского языка</b></p>
         <p class="express-publishing__text">Каждый ученик особенный. По-особому устроен его мозг, возможности восприятия и обучаемости. Материалы Express Publishing, по которым мы преподаем, разрабатываются с учетом индивидуальных возможностей учеников определенного возраста. Группы также дифференцируются и формируются из учеников с близким языковым уровнем.</p>
         <picture class="express-publishing__img">
-          <source type="image/webp" srcset="">
-          <img src="" alt="">
+          <img src="../img/express-publishing-img-1.png" alt="">
         </picture>
       </li>
     </ul>
     <div class="express-publishing__controls controls">
-      <button class="controls__button controls__button--prev">назад</button>
-      <p class="controls__counter"><span class="controls__current">01</span> / <span class="controls__length">05</span></p>
-      <button class="controls__button controls__button--next">вперед</button>
+      <button class="controls__button controls__button--prev" data-target="slider-count-one.prev">назад</button>
+      <p class="controls__counter"><span class="controls__current" data-target="slider-count-one.current">01</span> / <span class="controls__length" data-target="slider-count-one.length">05</span></p>
+      <button class="controls__button controls__button--next" data-target="slider-count-one.next">вперед</button>
     </div>
   </section>
   <section class="teachers">
@@ -294,30 +292,30 @@
   <section class="free-lessons">
     <h2 class="free-lessons__title title">Ученики EduStream мощно прокачивают свои языковые навыки</h2>
     <p class="free-lessons__desc desc">на бесплатных еженедельных уроках</p>
-    <div class="free-lessons__tabs tabs">
+    <div class="free-lessons__tabs tabs" data-tabs>
       <ul class="tabs__list">
-        <li class="tabs__item tabs__item--active" data-tabs="1">
+        <li class="tabs__item tabs__item--active" data-tab="1">
           <picture class="tabs__img">
             <source type="image/webp" srcset="">
             <img src="" alt="">
           </picture>
           HUCK DAYS
         </li>
-        <li class="tabs__item" data-tabs="2">
+        <li class="tabs__item" data-tab="2">
           <picture class="tabs__img">
             <source type="image/webp" srcset="">
             <img src="" alt="">
           </picture>
           SKILL DAYS
         </li>
-        <li class="tabs__item" data-tabs="3">
+        <li class="tabs__item" data-tab="3">
           <picture class="tabs__img">
             <source type="image/webp" srcset="">
             <img src="" alt="">
           </picture>
           SPEAKING CLUB
         </li>
-        <li class="tabs__item" data-tabs="4">
+        <li class="tabs__item" data-tab="4">
           <picture class="tabs__img">
             <source type="image/webp" srcset="">
             <img src="" alt="">
@@ -326,7 +324,7 @@
         </li>
       </ul>
       <div class="tabs__content tabs__content--active" data-content="1">
-        <div class="free-lessons__card">
+        <div class="free-lessons__card" data-controller="lessons-card">
           <div class="free-lessons__top">
             <div class="free-lessons__content">
               <p><span>Huck days в EduStream</span> — это «взлом стереотипов» об английском языке.</p>
@@ -338,26 +336,20 @@
               <p><b>Актриса Асель Джаксыбаева</b> делилась сценическими секретами. </p>
               <p><b>Певица Диана Шарапова </b>— азами вокального мастерства. </p>
             </div>
-            <div class="free-lessons__slider slider">
-              <ul class="slider__list">
+            <div class="free-lessons__slider slider" data-controller="slider">
+              <ul class="slider__list" data-target="slider.list">
                 <li class="slider__item">
-                  <picture>
-                    <source type="image/webp" srcset="">
-                    <img src="" alt="">
-                  </picture>
+                  <img src="../img/slider.jpg">
                 </li>
                 <li class="slider__item">
-                  <picture>
-                    <source type="image/webp" srcset="">
-                    <img src="" alt="">
-                  </picture>
+                  <img src="../img/slider.jpg">
                 </li>
               </ul>
               <div class="slider__control">
-                <button class="slider__button slider__button--prev">Назад</button>
-                <button class="slider__button slider__button--next">Вперед</button>
+                <button class="slider__button slider__button--prev" data-target="slider.prev">Назад</button>
+                <button class="slider__button slider__button--next" data-target="slider.next">Вперед</button>
               </div>
-              <button class="free-lessons__more">Читать полностью</button>
+              <button class="free-lessons__more" data-target="lessons-card.more">Читать полностью</button>
             </div>
           </div>
           <ul class="free-lessons__list">
@@ -365,48 +357,64 @@
             <li class="free-lessons__item">Сегодня время возможностей, мир открыт, — говорила детям продюсер Мадина Абдрашитова, — Каждый может стать репортером, самостоятельно снимать, писать, монтировать и выкладывать в интернет это. Главное не лениться.</li>
             <li class="free-lessons__item"> Очень полезные встречи, нисколько не пожалели, что пришли. И субботы не жаль ради таких полезностей, — признавались ребята.</li>
           </ul>
-          <ul class="free-lessons__bottom">
-            <li class="free-lessons__adv">Бесплатно для всех учеников EduStream</li>
-            <li class="free-lessons__adv">Периодичность занятий — 1 раз в месяц</li>
-            <li class="free-lessons__adv">Новые гости и новый опыт на каждой встрече</li>
-          </ul>
         </div>
       </div>
+      <ul class="free-lessons__bottom">
+        <li class="free-lessons__adv">Бесплатно для всех учеников EduStream</li>
+        <li class="free-lessons__adv">Периодичность занятий — 1 раз в месяц</li>
+        <li class="free-lessons__adv">Новые гости и новый опыт на каждой встрече</li>
+      </ul>
     </div>
   </section>
-  <section class="reviews">
-    <h2 class="reviews__title title">Курсы английского языка в EduStream </h2>
+  <section class="reviews reviews--inner" >
+    <h2 class="reviews__title title">Курсы английского языка в EduStream</h2>
     <p class="reviews__desc desc">дают прекрасные результаты</p>
-    <div class="reviews__bottom">
-      <ul class="reviews__list">
+    <div class="reviews__bottom" data-controller="reviews">
+      <ul class="reviews__list" data-target="reviews.list">
         <li class="reviews__item">
-          <picture class="reviews__img">
-            <source type="image/webp" srcset="">
-            <img src="" alt="">
-          </picture>
-          <div class="reviews__content">
-            <p class="reviews__name">Ерден Телемисов</p>
-            <p class="reviews__position">Актер, каскадер</p>
-            <p class="reviews__text">С начала года моя дочь начала учить английский в алматинской школе EduStream. Спасибо педагогам за интересные уроки, дочь ходит на занятия с большим желанием. С начала года моя дочь начала учить английский в алматинской школе EduStream. Спасибо педагогам за интересные уроки, дочь ходит на занятия с большим желанием.</p>
-            <button class="reviews__more">Развернуть</button>
+          <div class="reviews__inner">
+            <picture class="reviews__img">
+              <img src="../img/reviews-img-1.png" alt="">
+            </picture>
+            <div class="reviews__content">
+              <p class="reviews__name">Ерден Телемисов</p>
+              <p class="reviews__position">Актер, каскадер</p>
+              <p class="reviews__text">С начала года моя дочь начала учить английский в алматинской школе EduStream. Спасибо педагогам за интересные уроки, дочь ходит на занятия с большим желанием. С начала года моя дочь начала учить английский в алматинской школе EduStream. Спасибо педагогам за интересные уроки, дочь ходит на занятия с большим желанием.</p>
+              <button class="reviews__more">Развернуть</button>
+            </div>
           </div>
         </li>
         <li class="reviews__item">
-          <picture class="reviews__img">
-            <source type="image/webp" srcset="">
-            <img src="" alt="">
-          </picture>
-          <div class="reviews__content">
-            <p class="reviews__name">Ерден Телемисов</p>
-            <p class="reviews__position">Актер, каскадер</p>
-            <p class="reviews__text">С начала года моя дочь начала учить английский в алматинской школе EduStream. Спасибо педагогам за интересные уроки, дочь ходит на занятия с большим желанием. С начала года моя дочь начала учить английский в алматинской школе EduStream. Спасибо педагогам за интересные уроки, дочь ходит на занятия с большим желанием.</p>
-            <button class="reviews__more">Развернуть</button>
+          <div class="reviews__inner">
+            <picture class="reviews__img">
+              <img src="../img/reviews-img-2.png" alt="">
+            </picture>
+            <div class="reviews__content">
+              <p class="reviews__name">Ерден Телемисов</p>
+              <p class="reviews__position">Актер, каскадер</p>
+              <p class="reviews__text">С начала года моя дочь начала учить английский в алматинской школе EduStream. Спасибо педагогам за интересные уроки, дочь ходит на занятия с большим желанием. С начала года моя дочь начала учить английский в алматинской школе EduStream. Спасибо педагогам за интересные уроки, дочь ходит на занятия с большим желанием.</p>
+              <button class="reviews__more">Развернуть</button>
+            </div>
           </div>
         </li>
+        <li class="reviews__item">
+          <div class="reviews__inner">
+            <picture class="reviews__img">
+              <img src="../img/reviews-img-2.png" alt="">
+            </picture>
+            <div class="reviews__content">
+              <p class="reviews__name">Ерден Телемисов</p>
+              <p class="reviews__position">Актер, каскадер</p>
+              <p class="reviews__text">С начала года моя дочь начала учить английский в алматинской школе EduStream. Спасибо педагогам за интересные уроки, дочь ходит на занятия с большим желанием. С начала года моя дочь начала учить английский в алматинской школе EduStream. Спасибо педагогам за интересные уроки, дочь ходит на занятия с большим желанием.</p>
+              <button class="reviews__more">Развернуть</button>
+            </div>
+          </div>
+        </li>
+
       </ul>
       <div class="reviews__controls controls">
-        <button class="controls__button controls__button--prev">назад</button>
-        <button class="controls__button controls__button--next">вперед</button>
+        <button class="controls__button controls__button--prev" data-target="reviews.prev">назад</button>
+        <button class="controls__button controls__button--next" data-target="reviews.next">вперед</button>
       </div>
     </div>
   </section>
@@ -459,102 +467,106 @@
   </section>
   <section class="text-block">
     <picture class="text-block__img">
-      <source type="image/webp" srcset="">
-      <img src="" alt="">
+      <source type="image/webp" srcset="img/logo@desktop.webp">
+      <img src="../img/logo@desktop.png" alt="">
     </picture>
     <div class="text-block__content">
       <h2 class="text-block__title title">Заголовок SEO-текста</h2>
       <p>Образовательная  компания  «EDUStream» была основана в 2014  году. Она работает в трех  направлениях: Центр Изучения Языков, Центр Образования за Рубежом и официальный эксклюзивный представитель международного издательства ExpressPublishing.  А теперь подробнее.</p>
-      <p>Образовательная  компания  «EDUStream» была основана в 2014  году. Она работает в трех  направлениях: Центр Изучения Языков, Центр Образования за Рубежом и официальный эксклюзивный представитель международного издательства ExpressPublishing.  А теперь подробнее.</p>
+      <p>Центр изучения языков обучают   английскому и немецкому  языкам по самым современным программам, включая подготовку к сдаче международного  экзамена IELTS. Большинство наших педагогов  имеют  международную профессиональную сертификацию. Контроль качества их работы осуществляет международный экзаменационный центр университета Кембридж CambridgeEnglishLanguageAssessment.</p>
       <a href="" class="text-block__button button button--border">подробнее</a>
     </div>
   </section>
   <section class="contacts">
-    <h2 class="contacts__title">Ждем вас в наших Языковых школах</h2>
-    <p class="contacts__desc">в Алматы и Нур-Султане</p>
-    <div class="contacts__tabs tabs">
-      <ul class="tabs__list">
-        <li class="tabs__item tabs__item--active" data-tabs="1">Алматы</li>
-        <li class="tabs__item" data-tabs="2">Нур-Сулан</li>
-      </ul>
-      <div class="tabs__content tabs__content--active" data-content="1">
-        <div class="contacts__left">
-          <p class="contacts__position">Богенбай батыра 104 — 1 этаж</p>
-          <div class="contacts__phones">
-            <a href="tel:87272938589" class="contacts__phone">8 (727) 293-85-89</a>
-            <a href="tel:87272938589" class="contacts__phone">8 (727) 293-85-89</a>
+    <div class="contacts__inner">
+      <h2 class="contacts__title">Ждем вас в наших Языковых школах</h2>
+      <p class="contacts__desc">в Алматы и Нур-Султане</p>
+      <div class="contacts__tabs tabs">
+        <ul class="tabs__list">
+          <li class="tabs__item tabs__item--active" data-tabs="1">Алматы</li>
+          <li class="tabs__item" data-tabs="2">Нур-Сулан</li>
+        </ul>
+        <div class="tabs__content tabs__content--active" data-content="1">
+          <div class="contacts__wrapper">
+            <div class="contacts__left">
+              <p class="contacts__position">Богенбай батыра 104 — 1 этаж</p>
+              <div class="contacts__phones">
+                <a href="tel:87272938589" class="contacts__phone">8 (727) 293-85-89</a>
+                <a href="tel:87272938589" class="contacts__phone">8 (727) 293-85-89</a>
+              </div>
+              <p class="contacts__time">пн-пт: 9:00-20:00 / сб: 10:00-17:00</p>
+              <a href="mailto:info@edustream.kz" class="contacts__email"><span>info@edustream.kz</span></a>
+              <ul class="contacts__list social">
+                <li class="social__item">
+                  <a href="">
+                    <picture class="social__img">
+                      <img src="../img/icon__inst.svg" alt="">
+                    </picture>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="">
+                    <picture class="social__img">
+                      <img src="../img/icon__fb.svg" alt="">
+                    </picture>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="">
+                    <picture class="social__img">
+                      <img src="../img/icon__yt.svg" alt="">
+                    </picture>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="">
+                    <picture class="social__img">
+                      <img src="../img/icon__vk.svg" alt="">
+                    </picture>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="contacts__map" id="map"></div>
           </div>
-          <p class="contacts__time">пн-пт: 9:00-20:00 / сб: 10:00-17:00</p>
-          <a href="mailto:info@edustream.kz" class="contacts__email">info@edustream.kz</a>
-          <ul class="contacts__list social">
-            <li class="social__item">
-              <picture class="social__img">
-                <source type="image/webp" srcset="">
-                <img src="" alt="">
-              </picture>
-            </li>
-            <li class="social__item">
-              <picture class="social__img">
-                <source type="image/webp" srcset="">
-                <img src="" alt="">
-              </picture>
-            </li>
-            <li class="social__item">
-              <picture class="social__img">
-                <source type="image/webp" srcset="">
-                <img src="" alt="">
-              </picture>
-            </li>
-            <li class="social__item">
-              <picture class="social__img">
-                <source type="image/webp" srcset="">
-                <img src="" alt="">
-              </picture>
-            </li>
-          </ul>
         </div>
-        <div class="contacts__map">
-          <!--    Тут будет карта      -->
-        </div>
-      </div>
-      <div class="tabs__content" data-content="2">
-        <div class="contacts__left">
-          <p class="contacts__position">Богенбай батыра 104 — 1 этаж</p>
-          <div class="contacts__phones">
-            <a href="tel:87272938589" class="contacts__phone">8 (727) 293-85-89</a>
-            <a href="tel:87272938589" class="contacts__phone">8 (727) 293-85-89</a>
+        <div class="tabs__content" data-content="2">
+          <div class="contacts__left">
+            <p class="contacts__position">Богенбай батыра 104 — 1 этаж</p>
+            <div class="contacts__phones">
+              <a href="tel:87272938589" class="contacts__phone">8 (727) 293-85-89</a>
+              <a href="tel:87272938589" class="contacts__phone">8 (727) 293-85-89</a>
+            </div>
+            <p class="contacts__time">пн-пт: 9:00-20:00 / сб: 10:00-17:00</p>
+            <a href="mailto:info@edustream.kz" class="contacts__email">info@edustream.kz</a>
+            <ul class="contacts__list social">
+              <li class="social__item">
+                <picture class="social__img">
+                  <source type="image/webp" srcset="">
+                  <img src="" alt="">
+                </picture>
+              </li>
+              <li class="social__item">
+                <picture class="social__img">
+                  <source type="image/webp" srcset="">
+                  <img src="" alt="">
+                </picture>
+              </li>
+              <li class="social__item">
+                <picture class="social__img">
+                  <source type="image/webp" srcset="">
+                  <img src="" alt="">
+                </picture>
+              </li>
+              <li class="social__item">
+                <picture class="social__img">
+                  <source type="image/webp" srcset="">
+                  <img src="" alt="">
+                </picture>
+              </li>
+            </ul>
           </div>
-          <p class="contacts__time">пн-пт: 9:00-20:00 / сб: 10:00-17:00</p>
-          <a href="mailto:info@edustream.kz" class="contacts__email">info@edustream.kz</a>
-          <ul class="contacts__list social">
-            <li class="social__item">
-              <picture class="social__img">
-                <source type="image/webp" srcset="">
-                <img src="" alt="">
-              </picture>
-            </li>
-            <li class="social__item">
-              <picture class="social__img">
-                <source type="image/webp" srcset="">
-                <img src="" alt="">
-              </picture>
-            </li>
-            <li class="social__item">
-              <picture class="social__img">
-                <source type="image/webp" srcset="">
-                <img src="" alt="">
-              </picture>
-            </li>
-            <li class="social__item">
-              <picture class="social__img">
-                <source type="image/webp" srcset="">
-                <img src="" alt="">
-              </picture>
-            </li>
-          </ul>
-        </div>
-        <div class="contacts__map">
-          <!--    Тут будет карта      -->
+          <div class="contacts__map"></div>
         </div>
       </div>
     </div>
